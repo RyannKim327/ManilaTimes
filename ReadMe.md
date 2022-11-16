@@ -66,4 +66,4 @@ const mt = require("manilatimes")
 })
 ```
 
-> Thank you for using this program, I hope it helps you a lot.
+> Thank you for using this program, I hope it helps you a lot. 
