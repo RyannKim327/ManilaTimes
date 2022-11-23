@@ -11,7 +11,7 @@ npm install manilatimes
 
 ### How to use (**NodeJS:** ```await mt.todayNews()``` )
 ```NodeJS
-const mt = require("manilatimes")
+const mt = require("manilatimes-scrape")
 
 (async () => {
 	let data = await mt.todayNews()
@@ -35,7 +35,7 @@ const mt = require("manilatimes")
 
 ### How to use (**NodeJS** ```await mt.article(url)```)
 ```NodeJS
-const mt = require("manilatimes")
+const mt = require("manilatimes-scrape")
 
 (async () => {
 	let data = mt.article("https://www.manilatimes.net/2022/11/17/news/harris-visit-affirms-us-commitment/1866540")
@@ -50,20 +50,35 @@ const mt = require("manilatimes")
 	"title": "Sample Title",
 	"author": "Author's Name",
 	"date": "Publication Date",
-	"body": "Article"
+	"body": [
+		"Article"
+	]
 }
 ```
 > This program isn't published on NPMJS so that, you may not still use this, but you can manually install this, by using git. In addition, here's the sample of the entire program that you may use to make life easier.
 
 ### Sample Code (**NodeJS**)
 ```NodeJS
-const mt = require("manilatimes")
+const mt = require("manilatimes-scrape")
 
 (async () => {
 	let data = await todayNews()
-	let data2 = await article(data.url)
+	let data2 = await article(data[0].url)
 	console.log(data2)
 })
 ```
 
 > Thank you for using this program, I hope it helps you a lot. 
+
+### Credits
+* Facebook bot developers
+* ManilaTimes
+* Lester Navarra
+* John Paul Caigas
+* Mart Anthony Salazar
+* Salvador
+* John Jeremy Antiguo
+* John Roy Lapida Calimlim
+* Earl Shine Sawir
+
+> I give credits to those who helped me, not just the one who help me in this project, but also to my journey as a so-called developer.
